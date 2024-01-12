@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard Admin</title>
+</head>
+<body>
+
+    <div class="container">
+       <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="images/logo.png">
+                    <h2>Painel<span class="danger"></span>Admin</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        cancel
+                        </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        dashboard
+                        </span>
+                        <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        person_outline
+                        </span>
+                        <h3>Usuários</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                        </span>
+                        <h3>Histórico</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">
+                        insights
+                        </span>
+                        <h3>Análises</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                            mail_outline
+                        </span>
+                        <h3>Tickets</h3>
+                        <div class="message-count">27</div>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        inventory
+                        </span>
+                        <h3>Inventário</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        report_gmailerrorred
+                        </span>
+                        <h3>Feedback</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                        </span>
+                        <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        add
+                        </span>
+                        <h3>Novo Login</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                        </span>
+                        <h3>Sair</h3>
+                </a>
+            </div>
+         </aside>
+
+
+         <main>
+            <h1>Análises</h1>
+            <div class="analyse">
+                <div class="sales">
+                    <div class="status">
+                       <div class="info">
+                            <h3>Saldo Total</h3>
+                            <h1>$2.325.638,86</h1>
+                       </div>
+                       <div class="progresss">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="percentage">
+                           <p>+81%</p> 
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="visits">
+                    <div class="status">
+                       <div class="info">
+                            <h3>Visitas</h3>
+                            <h1>35,835</h1>
+                       </div>
+                       <div class="progresss">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="percentage">
+                           <p>-48%</p> 
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="searches">
+                    <div class="status">
+                       <div class="info">
+                            <h3>Buscas</h3>
+                            <h1>18,358</h1>
+                       </div>
+                       <div class="progresss">
+                        <svg>
+                            <circle cx="38" cy="38" r="36"></circle>
+                        </svg>
+                        <div class="percentage">
+                           <p>+21%</p> 
+                        </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+            <div class="new-users">
+                <h2>Novos Usuários</h2>
+                <div class="user-list">
+                    <div class="user">
+                        <img src="images/user1.jpg">
+                        <h2>Maria</h2>
+                        <p>30 Minutos atrás</p>
+                    </div>
+                    <div class="user">
+                        <img src="images/user2.jpg">
+                        <h2>Bruno</h2>
+                        <p>1 Hora atrás</p>
+                    </div>
+                    <div class="user">
+                        <img src="images/user3.jpg">
+                        <h2>Ricardo</h2>
+                        <p>3 Horas atrás</p>
+                    </div>
+                    <div class="user">
+                        <img src="images/user4.jpg">
+                        <h2>Cristiano</h2>
+                        <p>15 Minutos atrás</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-orders">
+                <h2>Ordens Recentes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome Curso</th>
+                            <th>Número Curso</th>
+                            <th>Status</th>
+                            <th>Informações</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <a href="#">Ver Todos</a>
+            </div>
+
+
+         </main>
+
+         <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                   <span class="material-icons-sharp">
+                        menu
+                   </span> 
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                   </span>
+                   <span class="material-icons-sharp">
+                    dark_mode
+                    </span> 
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Olá, <b>Vinicius</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="images/user3.jpg">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="user-profile">
+                <div class="logo">
+                    <img src="images/logo.png">
+                    <h2>ProgsVini</h2>
+                    <p>Fullstack Web Developer</p>
+                </div>
+            </div>
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Reminders</h2>
+                    <span class="material-icons-sharp">
+                        notifications_none
+                    </span>
+                </div>
+
+                <div class="notifications">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            volume_up
+                        </span>
+                    </div>
+                    <div class="content">
+                       <div class="info">
+                        <h3>Workshop</h3>
+                        <small class="text_muted">
+                            08:00 AM - 12:00 PM
+                        </small>
+                       </div>
+                       <span class="material-icons-sharp">
+                        more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notifications deactive">
+                    <div class="icon">
+                        <span class="material-icons-sharp">
+                            edit
+                        </span>
+                    </div>
+                    <div class="content">
+                       <div class="info">
+                        <h3>Workshop</h3>
+                        <small class="text_muted">
+                            08:00 AM - 12:00 PM
+                        </small>
+                       </div>
+                       <span class="material-icons-sharp">
+                        more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notifications add-reminder">
+                    <div>
+                        <span class="material-icons-sharp">
+                            add
+                            </span>
+                            <h3>Add Reminder</h3>
+                    </div>
+                </div>
+
+            </div>
+
+         </div>
+
+
+
+    </div>
+    
+    <script src="orders.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
